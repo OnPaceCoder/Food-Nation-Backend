@@ -25,7 +25,7 @@ app.use(cookieParser());
 app.use(express.urlencoded({ extended: false }));
 const corsOptions = {
     origin: ['http://localhost:5173',
-        'https://onpacecoder.github.io'],
+        'https://onpacecoder.github.io', 'https://food-nation-priyank.netlify.app/'],
     credentials: true,
 };
 app.use(cors(corsOptions));
