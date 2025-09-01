@@ -24,7 +24,8 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: false }));
 const corsOptions = {
-    origin: 'http://localhost:5173',
+    origin: ['http://localhost:5173',
+        'https://onpacecoder.github.io'],
     credentials: true,
 };
 app.use(cors(corsOptions));
